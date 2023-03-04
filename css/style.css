@@ -1,0 +1,757 @@
+/*CSS RESETS*/
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+* {
+  font-family: Roboto-regular;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+}
+
+/* --------------- Start Index --------------- */
+
+/* Header */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #1f2937;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5e7eb;
+  transform: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: palevioletred;
+  transition: 0.3s ease-out;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: palevioletred;
+  transition: 0.3s ease-out;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* ----- End Header ------ */
+
+/* ----- Start Hero ----- */
+
+.index-hero-section {
+  background-color: #1f2937;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-area {
+  flex: 1;
+}
+
+.index-hero-title {
+  font-size: 48px;
+  color: #f9faf8;
+  font-family: Roboto-Black;
+}
+
+.index-hero-title strong {
+  color: palevioletred;
+}
+
+.index-hero-subtitle {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.index-hero-btn {
+  background-color: palevioletred;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.index-hero-btn:hover {
+  background-color: white;
+  color: palevioletred;
+  transition: 0.3s ease-out;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.index-hero-image {
+  width: 70%;
+}
+
+/* ----- End Hero ----- */
+
+/* ----- Start Feature ----- */
+
+.feature {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature h2 {
+  font-size: 36px;
+  font-family: Roboto-Black;
+  color: #1f2937;
+}
+
+.feature-card-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  color: #e5e7eb;
+}
+
+.feature-card {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  margin: 15px 0;
+  background-color: white;
+  border: 2px solid palevioletred;
+}
+
+.feature-card:hover {
+  box-shadow: 10px 10px 54px rgba(176, 172, 243, 0.1);
+  transform: translateY(-2px);
+}
+
+.feature-card img {
+  width: 100%;
+}
+
+.figcaption-btn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid palevioletred;
+  border-radius: 5px;
+  background-color: white;
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.figcaption-btn:hover {
+  color: white;
+  background-color: palevioletred;
+  transition: 0.3s ease-out;
+}
+
+/* ----- End Feature ----- */
+
+/* ----- Start Quote ----- */
+
+.quote-section {
+  margin-top: 40px;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3em;
+}
+
+.quote-text,
+.quote-author {
+  color: #1f2937;
+  font-family: "Roboto-LightItalic";
+}
+
+.quote-text {
+  font-size: 36px;
+  text-align: left;
+}
+.quote-author {
+  font-size: 24px;
+  text-align: right;
+}
+
+/* ----- End Quote ----- */
+
+/* ----- Start Newsletter ----- */
+
+.action {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 3em;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 2;
+}
+.action-title {
+  font-size: 18px;
+  font-family: Roboto-bold;
+}
+
+.action-text {
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: Roboto-light-italic;
+}
+
+.action-signup {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action-btn {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  color: palevioletred;
+  background-color: white;
+  transition: 0.3s ease-out;
+}
+
+/* ----- End Newsletter ----- */
+
+/* ----- Start Footer ----- */
+
+footer {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 14px;
+  padding: 50px;
+}
+
+.footer-title {
+  font-size: 24px;
+}
+
+.footer-contact {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-contact h3 {
+  margin-top: 1em;
+}
+
+.footer-list {
+  margin-top: 1em;
+  line-height: 2em;
+  list-style: none;
+}
+
+.footer-list .grey {
+  font-family: Roboto-light;
+  color: grey;
+}
+
+.contact-info p {
+  margin-top: 20px;
+}
+
+.footer-socials {
+  margin-top: 20px;
+}
+
+.footer-icons {
+  display: inline-block;
+  padding: 2px;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+
+.footer-icons:hover {
+  transform: scale(1.2);
+}
+
+.map {
+  display: flex;
+  align-items: center;
+}
+
+.footer-about-us {
+  flex: 1;
+}
+
+.footer-list .link {
+  text-decoration: none;
+  color: grey;
+  font-family: Roboto-light;
+}
+
+.footer-list .link:hover {
+  color: palevioletred;
+  transition: 0.3s ease-out;
+}
+
+.footer-about-us p {
+  margin-top: 20px;
+}
+
+.payment {
+  margin-top: 20px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+/* ----- End Footer ----- */
+
+/* --------------- End Index --------------- */
+
+/* --------------- Start Customs --------------- */
+
+/* ----- Start of Hero Section ----- */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 45vh;
+}
+
+/* ----- End of Hero Section ----- */
+
+/* ----- Start of Product Gallery ----- */
+
+.cards-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: max-content;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  margin: 1rem auto;
+}
+
+.product-image {
+  max-width: 320px;
+  max-height: 300px;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: palevioletred;
+}
+
+.shopping-cart-image {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+}
+
+.shopping-cart-image:hover {
+  outline: 1px solid palevioletred;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.pag-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: palevioletred;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.pag-btn:hover {
+  background-color: white;
+  color: palevioletred;
+  outline: 1px solid #1f2937;
+}
+
+/* ----- End of Product Gallery ----- */
+
+/* --------------- End Customs --------------- */
+
+/* --------------- Start Cart Page --------------- */
+
+/* ----- Start of Cart Hero ----- */
+
+.cart-hero-section {
+  position: relative;
+  width: 100%;
+}
+
+.cart-hero-image {
+  width: 100%;
+  max-height: 45vh;
+}
+
+/* ----- End of Cart Hero ----- */
+
+/* ----- Start of Cart Table ----- */
+
+.cart-section {
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #1f2937;
+  width: 95%;
+  border-bottom: 1px solid #1f2937;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table td,
+.cart-table th {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.cart-table th {
+  font-family: Roboto-medium;
+  font-size: 18px;
+  border-top: 1px solid #1f2937;
+  border-bottom: 1px solid #1f2937;
+}
+
+.cart-table td {
+  font-family: Roboto-light;
+  font-size: 12px;
+}
+
+.remove-logo {
+  cursor: pointer;
+}
+
+.remove-logo:hover {
+  transform: scale(1.2);
+}
+
+.quantity-input {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  background-color: transparent;
+  color: #1f2937;
+  border: 1px solid #1f2937;
+  border-radius: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera to remove the arrows*/
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox to remove the arrows*/
+.quantity-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 500px) {
+  .cart-section {
+    width: 100%;
+  }
+
+  .cart-table thead {
+    display: none;
+  }
+
+  .cart-table,
+  .cart-table tbody,
+  .cart-table tr,
+  .cart-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-table td,
+  .cart-table th {
+    border: 1px solid #1f2937;
+  }
+
+  .cart-table tr {
+    margin-bottom: 15px;
+  }
+
+  .cart-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .cart-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+  }
+}
+
+/* ----- End of Cart Table ----- */
+
+/* ----- End of coupon ----- */
+
+.coupon-section {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #1f2937;
+}
+
+.coupon-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.coupon-input-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input-coupon {
+  width: 250px;
+  height: 30px;
+  padding: 0 10px;
+  outline: 1px solid #1f2937;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.input-coupon:focus::placeholder {
+  color: transparent;
+}
+
+.apply-btn {
+  width: 80px;
+  height: 30px;
+  border: 0;
+  background-color: palevioletred;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  outline: 1px solid #1f2937;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.apply-btn:hover {
+  background-color: white;
+  color: palevioletred;
+  outline: none;
+  transition: 0.3s ease-out;
+  outline: 1px solid #1f2937;
+}
+
+.cart-total {
+  background-color: #d9d9d9;
+  color: #1f2937;
+  width: 400px;
+  height: max-content;
+  border-radius: 10px;
+}
+
+.cart-total-table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cart-total-table thead {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.cart-total-table tbody {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.cart-total-table tbody tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart-total-btn {
+  background-color: palevioletred;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-family: Roboto-medium;
+  font-size: 18px;
+}
+
+.cart-total-btn:hover {
+  background-color: #d9d9d9;
+  color: palevioletred;
+  transition: 0.3s ease-out;
+  outline: 1px solid #1f2937;
+}
+
+.cart-total-medium,
+.cart-total-light {
+  font-size: 18px;
+}
+
+.cart-total-medium {
+  font-family: Roboto-medium;
+}
+
+.cart-total-light {
+  font-family: Roboto-light;
+}
+
+/* ----- End of coupon ----- */
+
+/* --------------- End Cart Page --------------- */
