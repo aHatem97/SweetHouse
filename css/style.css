@@ -305,7 +305,7 @@ footer {
 
 /* ----- Start Footer ----- */
 
-footer {
+.footer-main {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -392,6 +392,14 @@ footer {
 
 .user-info {
   flex: 1;
+}
+
+.copyright {
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* ----- End Footer ----- */
