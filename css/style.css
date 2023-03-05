@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Roboto-Regular';
+  font-family: Roboto-Regular;
   src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 @font-face {
@@ -11,20 +11,20 @@
   src: url(../fonts/roboto/Roboto-Black.ttf);
 }
 @font-face {
-  font-family: ‘Roboto-Light’;
+  font-family: Roboto-Light;
   src: url(../fonts/roboto/Roboto-Light.ttf);
 }
 @font-face {
-  font-family: ‘Roboto-LightItalic’;
+  font-family: Roboto-LightItalic;
   src: url(../fonts/roboto/Roboto-LightItalic.ttf);
 }
 @font-face {
-  font-family: ‘Roboto-Medium’;
+  font-family: Roboto-Medium;
   src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
 
 * {
-  font-family: 'Roboto-Regular';
+  font-family: Roboto-Regular;
   margin: 0;
   padding: 0;
 }
@@ -231,7 +231,7 @@ footer {
 .quote-text,
 .quote-author {
   color: #1f2937;
-  font-family: ‘Roboto-LightItalic’;
+  font-family: Roboto-LightItalic;
 }
 
 .quote-text {
@@ -336,7 +336,7 @@ footer {
 }
 
 .footer-list .grey {
-  font-family: ‘Roboto-Light’;
+  font-family: Roboto-Light;
   color: grey;
 }
 
