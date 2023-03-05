@@ -231,7 +231,7 @@ footer {
 .quote-text,
 .quote-author {
   color: #1f2937;
-  font-family: Roboto-LightItalic;
+  font-family: ‘Roboto-LightItalic’;
 }
 
 .quote-text {
@@ -336,7 +336,7 @@ footer {
 }
 
 .footer-list .grey {
-  font-family: Roboto-Light;
+  font-family: ‘Roboto-Light’;
   color: grey;
 }
 
