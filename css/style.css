@@ -42,6 +42,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 40px;
   padding-right: 25px;
   background-color: #1f2937;
@@ -99,12 +100,20 @@ footer {
   background-color: #1f2937;
   display: flex;
   padding: 40px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .title-area {
+  flex: 2;
+}
+
+.image-area {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
 .index-hero-title {
@@ -140,14 +149,9 @@ footer {
   transition: 0.3s ease-out;
 }
 
-.image-area {
-  flex: 1;
-  display: flex;
-  justify-content: end;
-}
-
 .index-hero-image {
-  width: 70%;
+  width: 500px;
+  height: auto;
 }
 
 /* ----- End Hero ----- */
@@ -185,7 +189,6 @@ footer {
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
-  margin: 15px 0;
   background-color: white;
   border: 2px solid palevioletred;
 }
@@ -630,7 +633,7 @@ footer {
 
 /* ----- End of Cart Table ----- */
 
-/* ----- End of coupon ----- */
+/* ----- Start of coupon ----- */
 
 .coupon-section {
   width: 100%;
@@ -640,6 +643,7 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   color: #1f2937;
+  gap: 1em;
 }
 
 .coupon-input {
