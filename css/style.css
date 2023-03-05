@@ -25,7 +25,7 @@
 }
 
 * {
-  font-family: Roboto-regular;
+  font-family: "Roboto-Regular";
   margin: 0;
   padding: 0;
 }
@@ -110,7 +110,7 @@ footer {
 .index-hero-title {
   font-size: 48px;
   color: #f9faf8;
-  font-family: Roboto-Black;
+  font-family: "Roboto-Black";
 }
 
 .index-hero-title strong {
@@ -165,7 +165,7 @@ footer {
 
 .feature h2 {
   font-size: 36px;
-  font-family: Roboto-Black;
+  font-family: "Roboto-Black";
   color: #1f2937;
 }
 
@@ -268,13 +268,13 @@ footer {
 }
 .action-title {
   font-size: 18px;
-  font-family: Roboto-bold;
+  font-family: "Roboto-Bold";
 }
 
 .action-text {
   margin-top: 10px;
   font-size: 12px;
-  font-family: Roboto-light-italic;
+  font-family: "Roboto-LightItalic";
 }
 
 .action-signup {
@@ -337,7 +337,7 @@ footer {
 }
 
 .footer-list .grey {
-  font-family: Roboto-light;
+  font-family: "Roboto-Light";
   color: grey;
 }
 
@@ -374,7 +374,7 @@ footer {
 .footer-list .link {
   text-decoration: none;
   color: grey;
-  font-family: Roboto-light;
+  font-family: "Roboto-Light";
 }
 
 .footer-list .link:hover {
@@ -552,14 +552,14 @@ footer {
 }
 
 .cart-table th {
-  font-family: Roboto-medium;
+  font-family: "Roboto-Medium";
   font-size: 18px;
   border-top: 1px solid #1f2937;
   border-bottom: 1px solid #1f2937;
 }
 
 .cart-table td {
-  font-family: Roboto-light;
+  font-family: "Roboto-Light";
   font-size: 12px;
 }
 
@@ -736,7 +736,7 @@ footer {
   border: none;
   cursor: pointer;
   margin: 10px;
-  font-family: Roboto-medium;
+  font-family: "Roboto-Medium";
   font-size: 18px;
 }
 
@@ -753,11 +753,11 @@ footer {
 }
 
 .cart-total-medium {
-  font-family: Roboto-medium;
+  font-family: "Roboto-Medium";
 }
 
 .cart-total-light {
-  font-family: Roboto-light;
+  font-family: "Roboto-Light";
 }
 
 /* ----- End of coupon ----- */
